@@ -1,0 +1,25 @@
+# Compiled binaries & executables
+*.exe
+*.out
+*.app
+*.o
+*.obj
+*.exe
+
+# VS Code directory (prevents pushing personal settings/tasks)
+.vscode/
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# System & OS junk files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary / Log files
+*.log
+*.tmp
+*.temp
+
+# Environment / Secret files (if any)
+.env
