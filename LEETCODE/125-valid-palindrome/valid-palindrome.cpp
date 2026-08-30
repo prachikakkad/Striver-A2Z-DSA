@@ -10,15 +10,10 @@ public:
         string temp = cleaned;
         int left = 0, right = cleaned.length()-1;
         while(left < right){
-            swap(cleaned[left], cleaned[right]);
-            right--;
+           if(cleaned[left] != cleaned[right]) return false;
             left++;
+            right--;
         }
-        if(cleaned == temp){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return true;
     }
 };
