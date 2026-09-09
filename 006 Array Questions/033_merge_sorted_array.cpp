@@ -14,11 +14,11 @@ int main() {
     while(p2 >=0){
         if(p1 >= 0 && nums1[p1] > nums2[p2]){
             nums1[right] = nums1[p1];
-            p2--;
+            p1--;
         }
         else{
             nums1[right] = nums2[p2];
-            p1--;
+            p2--;
         }
 
         right--;

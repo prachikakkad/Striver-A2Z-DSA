@@ -15,7 +15,7 @@ int main() {
     
     
     for(int i = 0; i < n; i++){
-        if(i > 0 && ans[i] == ans[i-1]) continue;
+        if(i > 0 && nums[i] == nums[i-1]) continue;
 
         int left = i + 1;
         int right = n - 1;
@@ -43,6 +43,10 @@ int main() {
                 right--;
             }
         }
+    }
+
+    for(auto x : ans){
+        cout << x[0] << " " << x[1] << " " << x[2] << endl;
     }
 
     return 0;

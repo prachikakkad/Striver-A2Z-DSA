@@ -19,7 +19,7 @@ int main() {
         prefix_sum = prefix_sum + arr[i];
 
         if (prefix_sum == 0) {
-            max_len = i + 1;
+            max_len = max(max_len, i + 1);;
         }
 
         else if (m.find(prefix_sum) != m.end()) {
