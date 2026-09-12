@@ -20,7 +20,7 @@ int main() {
             secondLargest = largest;
             largest = x;
         }
-        else if(x > secondLargest && x != largest){
+        else if(x > secondLargest && x < largest){
             secondLargest = x;
         }
     }
